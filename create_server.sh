@@ -69,7 +69,7 @@ for i in $(seq -w 1 100); do
 done
 # Меняем темплейт через цикл на нужные нам слова
 for i in $(seq -w 1 100); do
-	sed -i s/profi.com/profi$i.profi.com/g /etc/nginx/sites-available/profi$i.profi.com
+	sed -i s/profi.com/profi$i/g /etc/nginx/sites-available/profi$i.profi.com
 done
 #-------------------------------------------------------------------------------------------------------------#
 # Создаём символические ссылки
